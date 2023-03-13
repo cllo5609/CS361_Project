@@ -1,5 +1,4 @@
 # Author: Clinton Lohr
-# CS 361-400: Software Engineering I
 
 """
 This program is used to run and gather data from other services. It is used to gather weather data by calling a weather
