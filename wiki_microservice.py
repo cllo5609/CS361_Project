@@ -1,5 +1,4 @@
-# Patrycjusz Bachleda
-# SOFTWARE ENGINEERING I (CS_361_400_S2022)
+# Clinton Lohr
 # Microservice to extract data from Wikipedia
 
 import time
