@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Ski Colorado</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="title">
+    <h1> Welcome to Ski Colorado </h1>
+    <h3>
+        Thanks for visiting Ski Colorado! Here you will find all the information
+        <br>you need to help pick your next ski trip destination.
+    </h3>
+</div>
+
+<div>
+    <table class = "quick-links">
+        <tr>
+            <th></th>
+                <td><a class="link_button" type="button" href="/">Home</a></td>
+                <td><a class="link_button" type="button" href="results">Results</a></td>
+                <td><a class="link_button" type="button" href="resorts">My Ski</a></td>
+                <td><a class="link_button" type="button" href="faq">FAQ</a></td>
+        </tr>
+    </table>
+</div>
+<h2> Which ski area would you like to explore?</h2>
+<h3>Check the map to find ski areas close to you!</h3>
+<h3>Or if you know the mountain you'd like to visit, jump to the list below!</h3>
+<div class = "content">
+
+    <iframe
+      width="1000"
+      height="700"
+
+      style="border:0"
+      loading="eager"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/d/embed?mid=1Q4QzAIdIVjIeJ3XOepJUQqTYPfNs_V6Q&ehbc=2E312F">
+    </iframe>
+    <br>
+    <br>
+    <br>
+    <h2 id="area">Found the ski area you would like to explore?</h2>
+    <h3>Choose the name from the list below and hit "Get Info"! </h3>
+
+    <form id="resort-form" method="get" action="results">
+        <div class="list-split">
+            <h3><u>A</u></h3>
+        <input type="radio" id="Arapahoe Basin" name="resort" value="Arapahoe Basin,Silverthorne,Arapahoe Basin">
+        <label for="Arapahoe Basin"> Arapahoe Basin</label>
+        <br>
+        <br>
+
+        <input type="radio" id="Aspen Highlands" name="resort" value="Aspen Highlands,Aspen,Aspen Highlands">
+        <label for="Aspen Highlands"> Aspen Highlands </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Aspen Mountain" name="resort" value="Aspen Mountain,Aspen,Aspen_Mountain_(ski_area)">
+        <label for="Aspen Mountain"> Aspen Mountain </label>
+        <br>
+        <br>
+        <h3><u>B</u></h3>
+        <input type="radio" id="Beaver Creek" name="resort" value="Beaver Creek,Beaver Creek,Beaver_Creek_Resort">
+        <label for="Beaver Creek"> Beaver Creek </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Breckenridge" name="resort" value="Breckenridge,Breckenridge,Breckenridge_Ski_Resort">
+        <label for="Breckenridge"> Breckenridge</label>
+        <br>
+        <br>
+
+        <input type="radio" id="Buttermilk" name="resort" value="Buttermilk,Aspen,Buttermilk_(ski_area)">
+        <label for="Buttermilk"> Buttermilk </label>
+        <br>
+        <br>
+        <h3><u>C</u></h3>
+
+
+        <input type="radio" id="Cooper" name="resort" value="Cooper,cooper,Ski_Cooper">
+        <label for="Cooper"> Cooper </label>
+        <br>
+        <br>
+
+       <input type="radio" id="Copper" name="resort" value="Copper Mountain,Frisco,Copper_Mountain_(Colorado)">
+        <label for="Copper"> Copper Mountain </label>
+        <br>
+        <br>
+
+       <input type="radio" id="Crested Butte" name="resort" value="Crested Butte,Crested Butte,Crested_Butte_Mountain_Resort">
+        <label for="Crested Butte"> Crested Butte </label>
+        <br>
+        <br>
+
+
+        <h3><u>E</u></h3>
+
+       <input type="radio" id="Eldora" name="resort" value="Eldora,Eldora,Eldora_Mountain_Resort">
+        <label for="Eldora"> Eldora </label>
+        <br>
+        <br>
+
+        </div>
+        <div class="list-split">
+        <h3><u>H</u></h3>
+       <input type="radio" id="Hesperus" name="resort" value="Hesperus,Durango,Hesperus_Ski_Area">
+        <label for="Hesperus"> Hesperus </label>
+        <br>
+        <br>
+
+       <input type="radio" id="Howelsen" name="resort" value="Howelsen Hill,Steamboat,Howelsen_Hill_Ski_Area">
+        <label for="Howelsen"> Howelsen Hill </label>
+        <br>
+        <br>
+
+
+        <h3><u>K</u></h3>
+        <input type="radio" id="Kendall" name="resort" value="Kendall Mountain,Silverton,Kendall_Mountain_Ski_Area">
+        <label for="Kendall"> Kendall Mountain</label>
+        <br>
+        <br>
+
+       <input type="radio" id="Keystone" name="resort" value="Keystone,Keystone,Keystone_Resort">
+        <label for="Keystone"> Keystone </label>
+        <br>
+        <br>
+
+        <h3><u>L</u></h3>
+
+        <input type="radio" id="Loveland" name="resort" value="Loveland,Silverthorne,loveland ski area">
+        <label for="Loveland"> Loveland </label>
+        <br>
+        <br>
+
+        <h3><u>M</u></h3>
+
+        <input type="radio" id="Monarch" name="resort" value="Monarch,Salida,Monarch_Ski_Area">
+        <label for="Monarch"> Monarch </label>
+        <br>
+        <br>
+
+
+        <h3><u>P</u></h3>
+
+        <input type="radio" id="Powderhorn" name="resort" value="Powderhorn,Grand Mesa,Powderhorn_Resort">
+        <label for="Powderhorn"> Powderhorn </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Purgatory" name="resort" value="Purgatory,Durango,Purgatory_Resort">
+        <label for="Purgatory"> Purgatory </label>
+        <br>
+        <br>
+
+        </div>
+
+        <div class="list-split">
+        <h3><u>S</u></h3>
+
+        <input type="radio" id="Silverton" name="resort" value="Silverton,Silverton,Silverton,_Colorado">
+        <label for="Silverton"> Silverton </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Snowmass" name="resort" value="Snowmass,Snowmass,Snowmass_(ski_area)">
+        <label for="Snowmass"> Snowmass </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Steamboat" name="resort" value="Steamboat,Steamboat,Steamboat_Ski_Resort">
+        <label for="Steamboat"> Steamboat </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Sunlight" name="resort" value="Sunlight,Glenwood Springs,Sunlight_Ski_Area">
+        <label for="Sunlight"> Sunlight </label>
+        <br>
+        <br>
+
+        <h3><u>T</u></h3>
+
+        <input type="radio" id="Telluride" name="resort" value="Telluride,Telluride,Telluride_Ski_Resort">
+        <label for="Telluride"> Telluride </label>
+        <br>
+        <br>
+
+        <h3><u>V</u></h3>
+
+        <input type="radio" id="Vail" name="resort" value="Vail,Vail,Vail_Ski_Resort">
+        <label for="Vail"> Vail </label>
+        <br>
+        <br>
+
+        <h3><u>W</u></h3>
+
+        <input type="radio" id="Winter Park" name="resort" value="Winter Park,Winter Park,Winter_Park_Resort">
+        <label for="Winter Park"> Winter Park </label>
+        <br>
+        <br>
+
+        <input type="radio" id="Wolf Creek" name="resort" value="Wolf Creek,Pagosa Springs,Wolf_Creek_ski_area">
+        <label for="Wolf Creek"> Wolf Creek </label>
+        <br>
+        <br>
+
+        </div>
+
+        <h3> Click "Get Info" for information about this ski area </h3>
+
+        <input type="submit" href="result"  name="resort" value="Get Info">
+    </form>
+
+</div>
+{% endblock %}

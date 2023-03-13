@@ -1,0 +1,177 @@
+
+body {
+    font-family: AppleGothic;
+    font-size: large;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: azure;
+}
+
+/* All Pages */
+.title {
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #A5D6D9;
+    padding: 1%
+
+}
+
+.login {
+    text-align: right;
+
+}
+
+.quick-links {
+    padding-top: 1%;
+    text-align: left;
+    padding-bottom: 5%;
+
+}
+
+.quick-links td{
+    padding-right: 20px;
+
+
+}
+
+
+.top-page {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5%;
+    border-style: solid;
+    background-color: #BFDDE0;
+
+
+}
+
+/* INDEX PAGE */
+
+.content form {
+    border-style: solid;
+    background-color: #BFDDE0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    padding: 2%;
+
+}
+
+
+.list-split {
+    display: inline-table;
+    margin: 7%;
+    padding: 1%;
+
+}
+.ski-list {
+    padding-bottom: 2%;
+}
+
+.map {
+
+    padding: 5%;
+
+}
+
+.lower-page {
+    margin: auto;
+    display: block;
+
+}
+
+.t-left{
+    background-color: white;
+    float: left;
+    width: 65%;
+    padding: 2%;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.t-right{
+    float: right;
+    width: 25%;
+}
+
+.weather {
+    display: inline-block;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: khaki;
+    padding: 1%;
+
+}
+
+.weather th {
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 1%
+}
+
+.weather td{
+    border-radius: 10px;
+}
+.left {
+    border-style: solid;
+    background-color: blanchedalmond;
+
+}
+
+.right {
+    background-color: white;
+}
+
+.resort-form {
+    background-color: khaki;
+}
+
+
+.my-ski {
+    width: 98%;
+    text-align: center;
+    padding: 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.my-ski th {
+
+    background-color: #A5D6D9;
+    border-style: solid;
+    font-size: 25px;
+
+
+}
+
+.my-ski tr {
+
+    background-color: #BFDDE0;
+}
+.user-data{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5%;
+    border-style: solid;
+    background-color: #BFDDE0;
+}
+
+.faq-list{
+    text-align: left;
+}
+
+.faq-list dt{
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 1%;
+}
+
+.faq-list dd{
+    padding-bottom: 2%;
+}
+

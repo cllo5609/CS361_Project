@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title xmlns="http://www.w3.org/1999/html"> Ski Colorado| Results </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="title">
+    <h1> Results for {{resort}} </h1>
+    <h3>
+        Below you'll find information for {{resort}} Ski Area
+        <br>
+        <br>
+    </h3>
+
+</div>
+
+<div>
+    <table class = "quick-links">
+        <tr>
+            <th></th>
+                <td><a class="link_button" type="button" href="/">Home</a></td>
+                <td><a class="link_button" type="button" href="results">Results</a></td>
+                <td><a class="link_button" type="button" href="resorts">My Ski</a></td>
+                <td><a class="link_button" type="button" href="faq">FAQ</a></td>
+        </tr>
+    </table>
+</div>
+<div class="content">
+    <div class="top-page">
+        <div class="t-left">
+            <h3><u>About {{resort}}</u></h3>
+            <p>
+            {{info[5][0]}}
+
+            </p>
+        </div>
+
+
+        <div class="t-right">
+        <table class="weather">
+            <tr>
+                <th>Local Weather</th>
+            </tr>
+
+            <tr class="left">
+                <td>Temperature</td>
+            </tr>
+
+            <tr class="right">
+                <td>{{data[2]}} F</td>
+
+            </tr>
+
+            <tr class="left">
+                <td>Conditions</td>
+            </tr>
+
+            <tr class="right">
+                <td>{{data[3]}}</td>
+            </tr>
+
+            <tr class="left">
+                <td>Humidity</td>
+            </tr>
+
+            <tr class="right">
+                <td>{{data[4]}}</td>
+            </tr>
+
+        </table>
+
+        </div>
+    </div>
+
+    <div class="lower-page">
+        <div class="map">
+            <iframe
+                width = "950"
+                height="600"
+                style="border: 0"
+                loading="eager"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5f5ATCiBVJFdzTXKB8JY4no4jfnxBu20
+                &q={{resort + 'ski'}}CO">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+
+
+    <a href="/" class="return-home">Return to Homepage</a>
+
+{% endblock %}
