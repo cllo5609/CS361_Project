@@ -1,6 +1,6 @@
 # Clinton Lohr
-# CS 361-400: Software Engineering I
 # Weather Data Microservice
+
 """
 This microservice is used to gather weather data by calling a weather API. Requests are made in the form of a text
 file and returned to a user using another text file. Input for this program is in the form of a string and must be
